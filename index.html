@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/11779acc0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="index.html"><i class="fa-solid fa-plane-departure"></i>AeroCorpo</a>
+                </div>
+                <nav class="nav">
+                    <a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="#"><i class="fa-solid fa-circle-user"></i>Nosotros</a>
+                    <a href="#"><i class="fa-brands fa-product-hunt"></i>Servicios</a>
+                    <a href="#"><i class="fa-brands fa-readme"></i>Noticias</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>Contacto</a>
+                </nav>
+                <div class="carrito">
+                        <a href="#" id = "boton-carrito" class="botonCarrito"><i class="fa-solid fa-cart-shopping"></i> Carrito de compras                          
+                        </a>
+                        <div id = "div-carrito" class= "div-carrito" >
+                            <table class = "lista-carrito"> 
+                                <thead>
+                                    <th>
+                                        <h5 class="informacion-carrito">Destino
+                                        </h5>
+                                    </th>
+                                    <th>
+                                        <h5 class = "informacion-carrito">Fecha
+                                        </h5>
+                                    </th>
+                                    <th>
+                                        <h5 class="informacion-carrito">Precio
+                                        </h5>
+                                    </th>
+                                </thead>
+                                    <tbody id = "carrito-tbody"></tbody>
+                            </table>
+   
+                            <a href="#" id="vaciar-carrito" class="vaciarCarrito">Vaciar Carrito</a>                         
+                        </div>                        
+                </div>
+                <div class="social">
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-twitter"></i>
+                        </a>  
+                    </div> 
+                </div>
+            </div>
+            <div class="texto-principal margen-interno">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio modi nostrum deleniti quasi asperiores illum ipsum porro omnis dolore soluta hic, possimus reiciendis maiores provident quas ipsa consequuntur laboriosam.</h1>
+            </div>
+        </header>
+        <section class="section margen-interno">
+            <div id="vuelos" class="articulos">
+                <article class="article">
+                    <img src="imagenes/2.jpg" alt="">
+                    <h3 class = "fecha">11 de agosto del 2022</h3>
+                    <h2 class = "destino">Caracas - Peru</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda natus doloremque obcaecati? Neque enim ipsum quam aperiam saepe adipisci, ab a cum, ullam odit quis laborum praesentium, fuga voluptas.</p>
+                    <p>Precio: 600$ <span class="preciop" ></span></p>
+                    <a href="#" class="boton-comprar" data-precio="600" data-destino = "Caracas - Peru" data-fecha = "11 de agosto del 2022" id="1">Comprar</a>
+                </article>
+                <article class="article">
+                    <img src="imagenes/3.jpg" alt="">
+                    <h3 class = "fecha">19 de agosto del 2022</h3>
+                    <h2 class = "destino">Caracas - Japon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda natus doloremque obcaecati? Neque enim ipsum quam aperiam saepe adipisci, ab a cum, ullam odit quis laborum praesentium, fuga voluptas.</p>
+                    <p>Precio: 1250$ <span class="preciop" data-precio="1250"></span></p>
+                    <a href="#" class="boton-comprar" data-precio="1250" data-destino = "Caracas - Japon" data-fecha = "19 de agosto del 2022"  id="2">Comprar</a>
+                </article>
+                <article class="article">
+                    <img src="imagenes/4.jpg" alt="">
+                    <h3 class = "fecha">08 de septiembre del 2022</h3>
+                    <h2 class = "destino">Caracas - Colombia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda natus doloremque obcaecati? Neque enim ipsum quam aperiam saepe adipisci, ab a cum, ullam odit quis laborum praesentium, fuga voluptas.</p>
+                    <p>Precio: 350$ <span class="preciop" data-precio="350"></span></p>
+                    <a href="#" class="boton-comprar" data-precio="350" data-destino = "Caracas - Colombia" data-fecha = "08 de septiembre del 2022"  id="3">Comprar</a>
+                </article>
+                <article class="article">
+                    <img src="imagenes/5.jpg" alt="">
+                    <h3 class = "fecha">26 de septiembre del 2022</h3>
+                    <h2 class = "destino">Caracas - Argentina</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda natus doloremque obcaecati? Neque enim ipsum quam aperiam saepe adipisci, ab a cum, ullam odit quis laborum praesentium, fuga voluptas.</p>
+                    <p>Precio: 850$ <span class="preciop" data-precio="850"></span></p>
+                    <a href="#" class="boton-comprar" data-precio="850" data-destino = "Caracas - Argentina" data-fecha = "26 de septiembre del 2022" id="4">Comprar</a>
+                </article>
+                <nav class="navegacion">
+                    <a href="#">Inicio</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Final</a>
+                </nav>
+            </div>
+            <aside class="aside">
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img src="imagenes/BKpolister transparente.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Donaciones</h4>
+                    <img src="imagenes/990eba2f4f83754ca8eddf7ff150996b.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Donaciones</h4>
+                    <img src="imagenes/990eba2f4f83754ca8eddf7ff150996b.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Donaciones</h4>
+                    <img src="imagenes/990eba2f4f83754ca8eddf7ff150996b.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Donaciones</h4>
+                    <img src="imagenes/990eba2f4f83754ca8eddf7ff150996b.png" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img src="imagenes/BKpolister transparente.png" alt="">
+                </div>                
+            </aside>
+        </section>
+        <footer class="footer margen-interno">
+            <nav class="pie">
+                <a href="#">Desarrollado por Osman A. Colmenares F.</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
